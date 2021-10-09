@@ -25,5 +25,13 @@ namespace SeleniumTest
             driver.Url = "https://www.google.com";
             driver.Quit();
         }
+
+        [TestMethod]
+        public void ConstRead()
+        {
+            ConstReadOnlyAndStatic constRead = new ConstReadOnlyAndStatic();
+            ConstReadOnlyAndStatic constRead2 = new ConstReadOnlyAndStatic();
+            Console.WriteLine(constRead2.b);
+        }
     }
 }
